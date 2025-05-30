@@ -10,7 +10,7 @@
 
 ```
 # Клонирование проекта
-git clone https://github.com/a-milenkin/LLM_course_project.git
+git clone https://github.com/a-milenkin/LLM_course_project.git](https://github.com/JamilyaKuanysh/AI_English_Tutor_Bot.git
 cd LLM_course_project
 
 # Запуск сборки
@@ -35,7 +35,7 @@ docker compose restart
 
 ```
 Клонирование проекта
-git clone https://github.com/a-milenkin/LLM_course_project.git
+git clone https://github.com/a-milenkin/LLM_course_project.git](https://github.com/JamilyaKuanysh/AI_English_Tutor_Bot.git
 cd LLM_course_project
 
 Установка зависимостей
