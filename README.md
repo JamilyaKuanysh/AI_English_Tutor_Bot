@@ -2,42 +2,47 @@
 
 Телеграм бот для обучения английскому с использованием LLM технологий.
 
-## Требования
+Пример запущенного проекта https://t.me/Speakadora_bot
 
-- Docker и Docker Compose
-- Python 3.8+
-- Telegram Bot Token
-- OpenAI API Key
+# С использованием Docker (рекомендуется)
 
-## Установка и запуск
+# Добавьте нужные ключи и токены в config.yaml 
 
-1. Клонируйте репозиторий:
-```bash
-git clone <repository-url>
-cd llm-course-bot
+```
+# Клонирование проекта
+git clone https://github.com/a-milenkin/LLM_course_project.git
+cd LLM_course_project
+
+# Запуск сборки
+sudo docker compose up -d --build``
+
+# Запуск после сборки
+docker compose start
+
+# Просмотр логов
+docker ps -a 
+docker logs -f контейнер_id
+
+# Выключение
+docker compose stop
+
+# Перезапуск без сборки
+docker compose restart
 ```
 
-2. Создайте файл `.env` в корневой директории проекта:
-```env
-BOT_TOKEN=your_bot_token_here
-OPENAI_API_KEY=your_openai_api_key_here
-MONGODB_URI=mongodb://llm:llm_mongo_pass@mongodb/?retryWrites=true&w=majority
-MONGODB_NAME=llm_db
-```
+# Запуск вне Docker контейнера
 
-3. Создайте файл `.env.docker` в корневой директории:
-```env
-TG_BOT_NAME=llm_course_bot
-MONGO_LOGIN=llm
-MONGO_PSWD=llm_mongo_pass
-DB_NAME=llm_db
-MONGO_EXPRESS_LOGIN=admin
-MONGO_EXPRESS_PSWD=admin_pass
-```
 
-4. Запустите проект:
-```bash
-docker-compose up --build
+```
+Клонирование проекта
+git clone https://github.com/a-milenkin/LLM_course_project.git
+cd LLM_course_project
+
+Установка зависимостей
+python3 -m pip install  -U --no-cache-dir -r requirements.txt -c constraints.txt
+
+Запуск проекта
+python3 /src/utils/main.py
 ```
 
 ## Структура проекта
