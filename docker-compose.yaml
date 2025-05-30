@@ -13,7 +13,6 @@ services:
     ports:
       - "8036:80"
     networks:
-      nginx_network:
       tg_llm_bot_net:
         ipv4_address: 172.55.18.11
     environment:
